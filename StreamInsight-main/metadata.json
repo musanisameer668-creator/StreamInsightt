@@ -1,0 +1,6 @@
+{
+  "name": "StreamInsight - Multi-Platform Streaming Analytics",
+  "description": "AI Powered Multi Streaming Platform Analytics with Power BI dashboard integration, content trend forecasting, and interactive platform metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

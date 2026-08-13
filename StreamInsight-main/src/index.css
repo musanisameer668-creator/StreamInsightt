@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --neon-pink: #FF007A;
+  --neon-cyan: #00F0FF;
+  --electric-purple: #7000FF;
+  --sunny-yellow: #FFD600;
+  --deep-black: #050505;
+  --soft-gray: #F4F4F9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: var(--soft-gray);
+    color: var(--deep-black);
+    overflow-x: hidden;
+  }
+}
+
+/* Vibrant Neo-Brutalist & Glass Cards */
+.glass-card {
+  background: #FFFFFF;
+  border: 3px solid var(--deep-black);
+  box-shadow: 6px 6px 0px var(--deep-black);
+  border-radius: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--deep-black);
+}
+
+.glass-panel {
+  background: #FFFFFF;
+  border: 4px solid var(--deep-black);
+  box-shadow: 10px 10px 0px var(--deep-black);
+  border-radius: 32px;
+}
+
+.card-vibrant-purple {
+  background: var(--electric-purple);
+  color: #FFFFFF;
+  border: 3px solid var(--deep-black);
+  box-shadow: 6px 6px 0px var(--deep-black);
+}
+
+.card-vibrant-cyan {
+  background: var(--neon-cyan);
+  color: var(--deep-black);
+  border: 3px solid var(--deep-black);
+  box-shadow: 6px 6px 0px var(--deep-black);
+}
+
+.card-vibrant-yellow {
+  background: var(--sunny-yellow);
+  color: var(--deep-black);
+  border: 3px solid var(--deep-black);
+  box-shadow: 6px 6px 0px var(--deep-black);
+}
+
+.card-vibrant-pink {
+  background: var(--neon-pink);
+  color: #FFFFFF;
+  border: 3px solid var(--deep-black);
+  box-shadow: 6px 6px 0px var(--deep-black);
+}
+
+/* Glow & Shadows */
+.glow-primary {
+  box-shadow: 4px 4px 0px var(--deep-black);
+}
+
+.glow-secondary {
+  box-shadow: 4px 4px 0px var(--deep-black);
+}
+
+.glow-purple {
+  box-shadow: 4px 4px 0px var(--deep-black);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--electric-purple), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, var(--electric-purple), var(--neon-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Modal fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--soft-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--deep-black);
+  border-radius: 999px;
+}
